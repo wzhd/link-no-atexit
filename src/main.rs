@@ -5,5 +5,7 @@ fn main() {
     unsafe { nvs_flash_init() };
     std::thread::spawn(|| {
         println!("hi");
-    }).join().unwrap();
+    })
+    .join()
+    .unwrap();
 }
